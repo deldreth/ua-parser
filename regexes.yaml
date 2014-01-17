@@ -200,6 +200,11 @@ user_agent_parsers:
   # Browser/major_version.minor_version.beta_version
   - regex: '(AdobeAIR|FireWeb|Jasmine|ANTGalio|Midori|Fresco|Lobo|PaleMoon|Maxthon|Lynx|OmniWeb|Dillo|Camino|Demeter|Fluid|Fennec|Epiphany|Shiira|Sunrise|Flock|Netscape|Lunascape|WebPilot|Vodafone|NetFront|Netfront|Konqueror|SeaMonkey|Kazehakase|Vienna|Iceape|Iceweasel|IceWeasel|Iron|K-Meleon|Sleipnir|Galeon|GranParadiso|Opera Mini|iCab|NetNewsWire|ThunderBrowse|Iris|UP\.Browser|Bunjalloo|Google Earth|Raven for Mac|Openwave)/(\d+)\.(\d+)\.(\d+)'
 
+  # Gmail
+  - regex: 'GoogleImageProxy'
+    family_replacement: 'Gmail'
+    v1_replacement: '0'
+
   # Outlook 2007
   - regex: 'MSOffice 12'
     family_replacement: 'Outlook'
